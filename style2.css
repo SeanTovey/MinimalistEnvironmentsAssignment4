@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:"AbhayaLibre-ExtraBold";
+    src: url(./fonts/AbhayaLibre-ExtraBold.ttf);
+    font-family:"AbhayaLibre-Regular";
+    src: url(./fonts/AbhayaLibre-Regular.ttf);
+    font-family:"Enriqueta-Medium";
+    src: url(./fonts/Enriqueta-Medium.ttf);
+  }
+:root{
+    --color-one: rgb(0,0,0); 
+    --color-two: rgb(100,100,100);
+    --color-three: rgb(180,180,180);
+    --color-four: rgb(240,240,240);
+    --border-one: dashed 2px white;
+}
+
+body{
+    background-color: #2d1a10;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.header{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    height: 70%;
+    width: 95%;
+    background-color: #ffecd7;
+    margin: auto;
+    margin-top: 2vw;
+    font-size: 40px;
+    font-family: "Enriqueta-Medium";
+}
+.headertext{
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+.back-button{
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+.back-button:hover{
+    text-decoration: underline;
+}
+.link{
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 85%;
+    width: 95%;
+    background-color: #ffecd7;
+    margin: auto;
+}
+.left{
+    display: flex;
+    border-style: solid;
+    border-width: 0 2vw 0 0;
+    border-color: #2d1a10;
+    justify-content: center;
+    align-items: center;
+}
+.Subterranean{
+    width: 90%;
+    object-fit: cover;
+}
+.Underwater{
+    width: 90%;
+    object-fit: cover;
+}
+.right{
+    font-size: 20px;
+    font-family: "Enriqueta-Medium";
+    margin-left:25px;
+    margin-right: 25px;
+    margin-top: 30px;
+}
