@@ -99,9 +99,11 @@ body{
     object-fit: cover;
 }
 .right{
-    font-size: 15px;
     font-family: "Enriqueta-Medium";
     margin-left:25px;
     margin-right: 25px;
     margin-top: 30px;
+}
+.a{
+    font-size: 15px;
 }
